@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Risss.clobber — curated casual fashion and streetwear.">
+    <title>Risss.clobber — Everyday, Elevated</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container editorial-nav">
+        <button class="mobile-toggle" data-menu-toggle aria-label="Buka menu" aria-expanded="false">☰</button>
+        <nav class="nav-left" data-nav aria-label="Navigasi utama">
+          <a data-nav-link="shop" href="#/shop">Collections</a>
+          <a data-nav-link="brands" href="#/shop?view=brands">Brand</a>
+        </nav>
+        <a class="brand-logo" href="#/home" aria-label="Risss.clobber">
+          <img src="image/logo/Logo.png" alt="Risss.clobber">
+        </a>
+        <div class="nav-actions editorial-actions">
+          <a class="nav-icon-link search-action" href="#/shop" aria-label="Cari produk" title="Cari produk">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.5"></circle>
+              <path d="m16 16 5 5"></path>
+            </svg>
+          </a>
+          <a class="nav-text-link" href="#/profile">My account</a>
+          <a class="nav-text-link nav-bag-action" href="#/cart">
+            Bag <span data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="app" aria-live="polite">
+      <section id="view-home" class="app-view"></section>
+      <section id="view-shop" class="app-view"></section>
+      <section id="view-product" class="app-view"></section>
+      <section id="view-wishlist" class="app-view"></section>
+      <section id="view-cart" class="app-view"></section>
+      <section id="view-checkout" class="app-view"></section>
+      <section id="view-about" class="app-view"></section>
+      <section id="view-contact" class="app-view"></section>
+      <section id="view-login" class="app-view"></section>
+      <section id="view-register" class="app-view"></section>
+      <section id="view-profile" class="app-view"></section>
+      <section id="view-orders" class="app-view"></section>
+      <section id="view-admin" class="app-view"></section>
+    </main>
+
+    <footer class="footer editorial-footer">
+      <div class="container">
+        <div class="footer-editorial-grid">
+          <div class="footer-accordions">
+            <details open>
+              <summary>Contact <span>+</span></summary>
+              <div class="footer-detail">
+                <a href="mailto:hello@risss.clobber">hello@risss.clobber</a>
+                <span>Mon–Fri, 09.00–17.00 WIB</span>
+                <a href="#/contact">Contact us →</a>
+              </div>
+            </details>
+            <details>
+              <summary>Client service <span>+</span></summary>
+              <div class="footer-detail">
+                <a href="#/about">Shipping &amp; delivery</a>
+                <a href="#/about">Returns &amp; exchanges</a>
+                <a href="#/about">Size guide</a>
+              </div>
+            </details>
+            <details>
+              <summary>Explore <span>+</span></summary>
+              <div class="footer-detail">
+                <a href="#/shop">Shop all</a>
+                <a href="#/shop?new=1">New arrivals</a>
+                <a href="#/shop?view=brands">Our brands</a>
+                <a href="#/shop">Best sellers</a>
+              </div>
+            </details>
+            <details>
+              <summary>Follow us <span>+</span></summary>
+              <div class="footer-detail">
+                <a href="#">Instagram ↗</a>
+                <a href="#">TikTok ↗</a>
+              </div>
+            </details>
+            <details>
+              <summary>Legal <span>+</span></summary>
+              <div class="footer-detail">
+                <a href="#/about">Privacy policy</a>
+                <a href="#/about">Terms &amp; conditions</a>
+              </div>
+            </details>
+          </div>
+
+          <div class="footer-newsletter">
+            <p class="eyebrow">Newsletter</p>
+            <h2>Stay in the loop.</h2>
+            <p class="footer-newsletter-copy">Receive new collection updates and selected stories from Risss.clobber.</p>
+            <form class="footer-newsletter-form" data-footer-newsletter>
+              <label for="footer-email">E-mail address*</label>
+              <div>
+                <input id="footer-email" type="email" placeholder="Enter your e-mail" autocomplete="email" required>
+                <button type="submit">Continue</button>
+              </div>
+              <p class="form-message" data-footer-message aria-live="polite"></p>
+            </form>
+            <div class="footer-selectors">
+              <button type="button">Shop in: <strong>Indonesia</strong><span>+</span></button>
+              <button type="button">Language: <strong>English</strong><span>+</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom editorial-footer-bottom">
+          <a class="footer-mark" href="#/home">
+            <img src="image/logo/Logo.png" alt="Risss.clobber">
+          </a>
+          <p>Copyright © <span data-year></span> Risss.clobber. All rights reserved. — <a href="#/about">Store info</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" data-modal aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-modal-close aria-label="Tutup">×</button>
+        <div class="modal-content" data-modal-content></div>
+      </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
